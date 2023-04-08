@@ -249,7 +249,13 @@ Here's an example of the data we integrated for one address, which contains four
 
 ### Portfolio Oracle
 
-In order to bring users' portfolios on-chain through oracles, we abstract the users' portfolios aggregated under the chain into 8 fields, each taking values from 0 to 2. Here's an example of a user's on-chain portfolio. As we can see, these fields fully reflect users' attitudes, risk appetite, and wealthiness.
+Sroll is a development of zk-rollup (ZKR) for zkEVM. Before Scroll came out, the main barrier to the adoption of the technology was its lack of EVM compatibility. While ZKR performed better in terms of throughput and gas costs, the inability to easily integrate EVM into zk-tech resulted in each ZKR having to build unique developer tools and infrastructure from scratch. This left zkEVM with the serious problem of how to inherit the network effects of EVM while maintaining a high level of performance. But the introduction of Scroll has dramatically changed this situation for the industry. Contracts deployed on the Ethernet mainnet can be easily ported to Scroll without any major changes to the codebase, greatly increasing the ease of migration of projects to the network
+
+Thus, we believe that more applications and projects will appear on the Scroll ecosystem, especially those migrated from the main network, which increases projects' demand to know their users' portfolios. However, these users' addresses interact pretty lesser on Scroll compared to Mainnet and other early Layer 2. That's why we believe in Scroll and choose to aggregate user profiles onto the Scroll as the first step in our public good data layer. 
+
+To achieve this, we deploy a contract for each address on Scroll and utilize the Oracle **RedStone** to bring off-chain data on-chain. This constitutes a new type of account abstraction. In detail, we abstract the user portfolios aggregated off-chain into 8 fields, each taking values from 0 to 2. 
+
+Here's an example of a user's on-chain portfolio. As we can see, these fields fully reflect users' attitudes, risk appetite, and wealthiness.
 
 ```
 {
