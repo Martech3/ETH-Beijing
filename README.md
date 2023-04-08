@@ -51,7 +51,7 @@ In this ETH Beijing Hackson, we mainly focus on constructing the infrastructure 
 
 To do so, We first generate a user profile by off-chain aggregation of his asset and social data on all EVM ecosystems. Subsequently, we deploy a contract for him and use eight **oracles** to upload his user portfolio to any of the ETH Layer 2. 
 
-Let's have a deep look at our data indexer and portfolio oracles.
+Let's have a deep look at our data indexer and why we choose Scroll as the first Layer 2 for our portfolio protocol.
 
 ## Data Indexer
 We create the best user portraits for our clients' marketing strategies through data indexers. 
