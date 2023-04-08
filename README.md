@@ -1,5 +1,20 @@
 # Martech3
 
+```
+
+ .----------------.   .----------------.   .----------------.   .----------------.   .----------------.   .----------------.   .----------------.   .----------------. 
+| .--------------. | | .--------------. | | .--------------. | | .--------------. | | .--------------. | | .--------------. | | .--------------. | | .--------------. |
+| | ____    ____ | | | |      __      | | | |  _______     | | | |  _________   | | | |  _________   | | | |     ______   | | | |  ____  ____  | | | |    ______    | |
+| ||_   \  /   _|| | | |     /  \     | | | | |_   __ \    | | | | |  _   _  |  | | | | |_   ___  |  | | | |   .' ___  |  | | | | |_   ||   _| | | | |   / ____ `.  | |
+| |  |   \/   |  | | | |    / /\ \    | | | |   | |__) |   | | | | |_/ | | \_|  | | | |   | |_  \_|  | | | |  / .'   \_|  | | | |   | |__| |   | | | |   `'  __) |  | |
+| |  | |\  /| |  | | | |   / ____ \   | | | |   |  __ /    | | | |     | |      | | | |   |  _|  _   | | | |  | |         | | | |   |  __  |   | | | |   _  |__ '.  | |
+| | _| |_\/_| |_ | | | | _/ /    \ \_ | | | |  _| |  \ \_  | | | |    _| |_     | | | |  _| |___/ |  | | | |  \ `.___.'\  | | | |  _| |  | |_  | | | |  | \____) |  | |
+| ||_____||_____|| | | ||____|  |____|| | | | |____| |___| | | | |   |_____|    | | | | |_________|  | | | |   `._____.'  | | | | |____||____| | | | |   \______.'  | |
+| |              | | | |              | | | |              | | | |              | | | |              | | | |              | | | |              | | | |              | |
+| '--------------' | | '--------------' | | '--------------' | | '--------------' | | '--------------' | | '--------------' | | '--------------' | | '--------------' |
+ '----------------'   '----------------'   '----------------'   '----------------'   '----------------'   '----------------'   '----------------'   '----------------' 
+
+```
 
 We are the first AIGC & Web3 precision marketing platform. 
 
@@ -55,27 +70,29 @@ Here's an example of the data we integrated for one address, which contains four
     "_id": {
         "$oid": "64305591276048c247fbc246"
     },
-    "wallet_address": "0xB2Ebc9b3a788aFB1E942eD65B59E9E49A1eE500D",
-    "user_info": {},
+    "wallet_address": "0xB2Ebc9b3a788aFB1E942eD65B59E9E49A1eE500D", 
+    "user_info": {}, #User activities on our platform
     "assets": {
         "crypto_holdings": {
-            "current_time_stamp": 1680889144,
+            "current_time_stamp": 1680889144, # The imestamp we aggregate the data
             "tokens": [
                 {
-                    "name": "Gitcoin",
-                    "symbol": "GTC",
-                    "network": "Ethereum",
-                    "amount": 1.8419e-14,
-                    "decimals": 18,
-                    "USDTvalue": 1.8129404551614876,
-                    "value": 3.339255024361944e-14,
+                    "name": "Gitcoin", # Name of certain token
+                    "symbol": "GTC", # Symbol of certain token
+                    "network": "Ethereum", # Network certain token on
+                    "amount": 18419, # The amount of token address holds
+                    "decimals": 18, #Decimals of the token
+                    "USDTvalue": 1.8129404551614876, # The value of the token priced on USDT
+                    "value": 33392.55024361944e, # Total value of the token
                     "contract_address": "0xde30da39c46104798bb5aa3fe8b9e0e1f348163f",
-                    "first_purchase_at": "1675194083",
-                    "last_time_activity": "sell",
-                    "total_supply": 100000000,
-                    "first_deploy_at": 1620856082,
-                    "label": [
-                        "meme",
+                    "first_purchase_at": "1675194083", # The timestamp when address first purchased the token
+                    "last_time_activity": "sell", # The last activity the address make on the token, either buy or sell
+                    "total_supply": 100000000, # Total supply of the token
+                    "first_deploy_at": 1620856082, # The timestamp the contract first deployed
+                    "label": [ #Lable of the token, either from coinmarketcap or by our heuristic algorithm
+                        "DAO",
+			"Paradigm Portfolio",
+			"Web3",
                         "current_negative"
                     ]
                 },
