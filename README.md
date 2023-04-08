@@ -246,8 +246,7 @@ Here's an example of the data we integrated for one address, which contains four
     }
 }
 ```
-
-### Portfolio Oracle
+### About Scroll
 
 Sroll is a development of zk-rollup (ZKR) for zkEVM. Before Scroll came out, the main barrier to the adoption of the technology was its lack of EVM compatibility. While ZKR performed better in terms of throughput and gas costs, the inability to easily integrate EVM into zk-tech resulted in each ZKR having to build unique developer tools and infrastructure from scratch. This left zkEVM with the serious problem of how to inherit the network effects of EVM while maintaining a high level of performance. But the introduction of Scroll has dramatically changed this situation for the industry. Contracts deployed on the Ethernet mainnet can be easily ported to Scroll without any major changes to the codebase, greatly increasing the ease of migration of projects to the network
 
