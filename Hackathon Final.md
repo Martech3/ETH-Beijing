@@ -39,6 +39,12 @@ To do.
 ## 8. 项目 github repo 链接
 [Martech3](https://github.com/Martech3)
 
+[ToB 前端 Dashboard代码](https://github.com/Martech3/Martech3-Data-Dashborad)
+
+[数据层数据聚合代码](https://github.com/Martech3/Martech_assets_aggregator)
+
+[Scroll Oracle 合约部署代码](https://github.com/Martech3/Scroll_Oracle_Data_Feeds)
+
 ## 9. 是否基于之前的项目
 没有，这是本次hackathon期间，从0到1开发的项目，完全原创。评委可以通过追溯我们github上的commit记录来检查。
 
